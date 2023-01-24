@@ -63,13 +63,14 @@ public class Metodos {
 
                     person.setName(datosPersona[0]);
                     person.setTown(datosPersona[1]);
-                    person.setAge(Integer.parseInt(datosPersona[2]));
-
-                    if(datosPersona[2].equals("")){
-                        person.setAge(Integer.parseInt(datosPersona[2] = "0"));
-                    }else{
+                    if(datosPersona.length > 2){
                         person.setAge(Integer.parseInt(datosPersona[2]));
+                    }else{
+                        person.setAge(0);
                     }
+
+
+
 
                     //Si el nombre de la persona esta vacio, lanza error
                     if(datosPersona[0].isBlank() || datosPersona[0].isEmpty()){
