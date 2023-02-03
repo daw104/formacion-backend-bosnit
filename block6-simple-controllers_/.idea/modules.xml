@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/block6-simple-controllers/block6-simple-controllers.iml" filepath="$PROJECT_DIR$/block6-simple-controllers/block6-simple-controllers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/block6-simple-controllers_.iml" filepath="$PROJECT_DIR$/.idea/block6-simple-controllers_.iml" />
+    </modules>
+  </component>
+</project>
