@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+
+  postgres:
+    image: postgres
+    container_name: "container-postgres"
+    restart: always
+    ports:
+      - '5433:5432'
+    environment:
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=contrasena
+      - POSTGRES_DB=db_postgre_persona
+
+  cloudbeaver:
+      image: dbeaver/cloudbeaver
+      container_name: "container-dbeaver"
+      restart: always
+      ports:
+        - '8978:8978'
+      depends_on:
+        - postgres
+
+  springboot-10-persona:
+      build: .
+      container_name: "container-app-10-persona"
+      ports:
+        - '8080:8080'
+      links:
+        - postgres
