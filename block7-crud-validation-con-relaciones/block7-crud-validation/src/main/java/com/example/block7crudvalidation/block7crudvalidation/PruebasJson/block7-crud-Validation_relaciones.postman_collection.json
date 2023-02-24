@@ -1,0 +1,718 @@
+{
+	"info": {
+		"_postman_id": "698082cc-2e9d-4a81-a815-a501171d75de",
+		"name": "block7-crud-Validation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "AddPerson",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"alexandra\",\r\n    \"password\": \"12345567\",\r\n    \"name\": \"alex_vazquez\",\r\n    \"surname\": \"el manolo\",\r\n    \"company_email\": \"alex@bosonit.com\",\r\n    \"personal_email\": \"m@m.com\",\r\n    \"city\": \"malaga\",\r\n    \"active\": true,\r\n    \"created_date\": \"\",\r\n    \"imagen_url\": \"google-imagenes-2.png\",\r\n    \"termination_date\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/persona/addPerson",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"addPerson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPersona2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"enrique c\",\r\n    \"password\": \"12345567\",\r\n    \"name\": \"enrique_trabajo\",\r\n    \"surname\": \"el enrique\",\r\n    \"company_email\": \"enriquee@bosonit.com\",\r\n    \"personal_email\": \"e@e.com\",\r\n    \"city\": \"USA\",\r\n    \"active\": true,\r\n    \"created_date\": \"\",\r\n    \"imagen_url\": \"google-imagenes-2.png\",\r\n    \"termination_date\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/persona/addPerson",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"addPerson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPersons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/get-all-persons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"get-all-persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPersonByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/get-person-by-name/pacooo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"get-person-by-name",
+								"pacooo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPersonById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/getPersonById/53",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"getPersonById",
+								"53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePersonById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/deletePersonById/103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"deletePersonById",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePersonById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"aa\",\r\n    \"password\": \"12345567\",\r\n    \"name\": \"gabi\",\r\n    \"surname\": \"nati\",\r\n    \"company_email\": \"sergio@bosonit.com\",\r\n    \"personal_email\": \"nati@ssssss.com\",\r\n    \"city\": \"carora\",\r\n    \"active\": false,\r\n    \"imagen_url\": \"google-imagenes-2.png\",\r\n    \"termination_date\": \"2029-10-30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/persona/updatePerson/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"updatePerson",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estudiante",
+			"item": [
+				{
+					"name": "Get-all-Estudiantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/estudiante/get-all-estudiantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiante",
+								"get-all-estudiantes"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "sime",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteStudentById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/estudiante/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiante",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStudentById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/estudiante/get/2/?outputType=simple",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiante",
+								"get",
+								"2",
+								""
+							],
+							"query": [
+								{
+									"key": "outputType",
+									"value": "simple"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStudent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n    \"num_hours_week\": 40,\r\n    \"coments\": \"bueno \",\r\n    \"branch\": \"Ciencias\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/estudiante/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiante",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddEstudianteConProfesor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"persona\": {\r\n        \"id_persona\": 352\r\n        },\r\n\r\n      \"profesor\": {\r\n        \"id_profesor\": 302\r\n        },  \r\n        \r\n    \"num_hours_week\": 25,\r\n    \"coments\": \"tiene futuro\",\r\n    \"branch\": \"python\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/estudiante/addEstudiante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiante",
+								"addEstudiante"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profesor",
+			"item": [
+				{
+					"name": "AddProfesor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"persona\": {\r\n        \"id_persona\": 202\r\n        },\r\n        \r\n    \"coments\": \"profe AJAX\",\r\n    \"branch\": \"LA DE AJAX\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/profesor/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profesor",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-All-Profesores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/profesor/get-all-profesores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"profesor",
+								"get-all-profesores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProfesor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/profesor/delete/52",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profesor",
+								"delete",
+								"52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-Profesor-Por-Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/profesor/get/2?outputType=simple",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profesor",
+								"get",
+								"2"
+							],
+							"query": [
+								{
+									"key": "outputType",
+									"value": "simple"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProfesor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"coments\": \"El  profesor muy guay actualizado\",\r\n    \"branch\": \"Spring boot\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/profesor/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profesor",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Asignatura",
+			"item": [
+				{
+					"name": "addAsignatura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n  \"asignatura\": \"typescript\",\r\n \"comments\": \"es sobre TSP\",\r\n \"initial_date\": \"\",\r\n \"finish_date\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/asignatura/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AsignarEstudianteYAsignatura",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/asignatura/estudiante/352/asignatura/152",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"estudiante",
+								"352",
+								"asignatura",
+								"152"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAsignatura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/asignatura/get/152?outputType=full",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"get",
+								"152"
+							],
+							"query": [
+								{
+									"key": "outputType",
+									"value": "full"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAsignatura",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/asignatura/delete/104",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"delete",
+								"104"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAsignatura",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getAllAsignaturas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/asignatura/get-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"get-all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feigns",
+			"item": [
+				{
+					"name": "app:8080",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/profesor/get/1?outputType=full",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"profesor",
+								"get",
+								"1"
+							],
+							"query": [
+								{
+									"key": "outputType",
+									"value": "full"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "app:8081",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/profesor/gett/302?outputType=simple",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"profesor",
+								"gett",
+								"302"
+							],
+							"query": [
+								{
+									"key": "outputType",
+									"value": "simple"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPerson Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"bbbbbb\",\r\n    \"password\": \"12345567\",\r\n    \"name\": \"lpacoooo\",\r\n    \"surname\": \"el paco\",\r\n    \"company_email\": \"gas@bosonit.com\",\r\n    \"personal_email\": \"s@s.com\",\r\n    \"city\": \"malaga\",\r\n    \"active\": true,\r\n    \"created_date\": \"\",\r\n    \"imagen_url\": \"google-imagenes-2.png\",\r\n    \"termination_date\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/persona/addPerson",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"persona",
+								"addPerson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProfesor Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"persona\": {\r\n        \"id_persona\": 2\r\n        },\r\n        \r\n    \"coments\": \"profe js\",\r\n    \"branch\": \"js\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/profesor/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"profesor",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
