@@ -16,10 +16,12 @@ public class JsonKafkaProducer {
 
     private KafkaTemplate<String, Persona>  kafkaTemplate;
 
+    //constructor
     public JsonKafkaProducer(KafkaTemplate<String, Persona> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 
+    //Construimos el mensaje
     public void sendMessage(Persona  persona){
         LOGGER.info(String.format("JSON Enviado -> %s", persona.toString()));
         Message<Persona> message = MessageBuilder
