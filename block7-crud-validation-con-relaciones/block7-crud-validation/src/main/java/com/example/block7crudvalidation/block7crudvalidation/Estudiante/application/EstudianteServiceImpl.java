@@ -79,16 +79,7 @@ public class EstudianteServiceImpl implements EstudianteService {
 
 
     //-*****-Eliminar Estudiante
-    @Override
-    public void deleteEstudianteById(int id) throws Request404 {
-        Request404 request404 = new Request404("No existe el Estudiante con el id " + id);
-        if (estudianteRepository.existsById(id)) {
-            estudianteRepository.deleteById(id);
-        } else {
-            throw request404;
-        }
-
-    } //-*****-fin de metodo
+  
 
 
     //-*****-Todas los estudiantes
